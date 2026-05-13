@@ -20,7 +20,6 @@ cat_cols = data["cat_cols"]
 st.set_page_config(page_title="Prediksi Kanker Paru")
 
 st.title("Prediksi Kanker Paru")
-st.write("Implementasi Algoritma Random Forest untuk Klasifikasi Kanker Paru")
 
 st.write("Silakan masukkan data pasien:")
 
