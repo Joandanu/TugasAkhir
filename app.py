@@ -12,7 +12,7 @@ model = data["model"]
 encoder = data["encoder"]
 num_cols = data["num_cols"]
 cat_cols = data["cat_cols"]
-prediction = model.predict(final_data)[0]
+
 # ==========================================
 # JUDUL WEBSITE
 # ==========================================
@@ -160,7 +160,7 @@ final_data = pd.concat(
     ],
     axis=1
 )
-
+prediction = model.predict(final_data)[0]
 # ==========================================
 # PREDIKSI
 # ==========================================
