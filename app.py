@@ -160,18 +160,15 @@ final_data = pd.concat(
     ],
     axis=1
 )
-prediction = model.predict(final_data)[0]
+
 # ==========================================
 # PREDIKSI
 # ==========================================
 
 if st.button("Prediksi"):
 
-    prediction = model.predict(final_data)[0]
-
-    if prediction == "YES":
+    if prediction == 1:
         st.error("Pasien Terindikasi Kanker Paru")
     else:
         st.success("Pasien Tidak Terindikasi Kanker Paru")
 
-st.write(prediction)
