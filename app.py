@@ -167,6 +167,8 @@ final_data = pd.concat(
 
 if st.button("Prediksi"):
 
+    prediction = model.predict(final_data)[0]
+
     if prediction == 1:
         st.error("Pasien Terindikasi Kanker Paru")
     else:
