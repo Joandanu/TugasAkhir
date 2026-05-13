@@ -12,7 +12,7 @@ model = data["model"]
 encoder = data["encoder"]
 num_cols = data["num_cols"]
 cat_cols = data["cat_cols"]
-
+prediction = model.predict(final_data)[0]
 # ==========================================
 # JUDUL WEBSITE
 # ==========================================
@@ -173,3 +173,5 @@ if st.button("Prediksi"):
         st.error("Pasien Terindikasi Kanker Paru")
     else:
         st.success("Pasien Tidak Terindikasi Kanker Paru")
+
+st.write(prediction)
